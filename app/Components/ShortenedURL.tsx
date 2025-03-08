@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { z } from "zod";
 import { httpService } from "../utility/httpService";
+import modifyUrl from "../utility/domainUrl";
 
 const formSchema = z.object({
   linkurl: z.string().min(2, "URL must be at least 2 characters"),
@@ -33,7 +34,7 @@ export default function ShortenedURL({ urlShortened }: ShortenedURLProps) {
   const onSubmit: SubmitHandler<FormData> = async ({ linkurl }) => {
     try {
       const response = await httpService.post("/", { url: linkurl });
-      urlShortened({ shortUrl: response.data.shortUrl });
+      urlShortened({ shortUrl: modifyUrl(response.data.shortUrl) });
       reset();
     } catch (error) {
       console.error(error);
