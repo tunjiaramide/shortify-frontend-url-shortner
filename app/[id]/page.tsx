@@ -25,7 +25,8 @@ export default function Page() {
           window.location.replace(originalUrl);
         }
       } catch (err) {
-        setError("Not Found");
+        console.log("Fetch error", err);
+        setError( "An error occurred");
       }
     };
 
