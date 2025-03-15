@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div className="w-1/2 h-screen flex flex-col mx-auto items-center justify-center">
-      <h1 className="mb-4 text-4xl text-blue-500 font-bold">Best and Fast URL Shortener</h1>
+      <h1 className="mb-4 text-4xl text-blue-500 font-bold">Fast, Free & Easy URL Shortening with Shoturl.co</h1>
       <ShortenedURL urlShortened={setShortenedURL} />
       <UrlShortened urlShortened={shortenedURL} />
     </div>

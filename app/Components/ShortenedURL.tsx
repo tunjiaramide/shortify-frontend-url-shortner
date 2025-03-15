@@ -53,8 +53,8 @@ export default function ShortenedURL({ urlShortened }: ShortenedURLProps) {
       {errors.linkurl && <p className="text-red-500 text-sm">{errors.linkurl.message}</p>}
 
       <p className="text-gray-500 text-sm">
-        Shortify is a free tool to shorten URLs and generate short links.
-        It allows you to create a shortened link making it easy to share.
+      ShotURL is a fast and free URL shortener that helps you create short, shareable links in seconds. 
+      Easily shorten long URLs for social media, emails, and more—no sign-up required!
       </p>
 
       <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded-md">
