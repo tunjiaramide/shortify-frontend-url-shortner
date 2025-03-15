@@ -1,7 +1,7 @@
 'use client';
 import { useState } from "react";
-import ShortenedURL from "./components/ShortenedURL";
-import UrlShortened from "./components/UrlShortened";
+import ShortenedURL from "./Components/ShortenedURL";
+import UrlShortened from "./Components/UrlShortened";
 
 
 interface ShortenedURLType {

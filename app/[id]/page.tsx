@@ -2,7 +2,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { httpService } from "../utility/httpService";
-import ErrorMessage from "../components/ErrorMessage";
+import ErrorMessage from "../Components/ErrorMessage";
 
 export default function Page() {
   const params = useParams<{ id: string }>();
