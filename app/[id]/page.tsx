@@ -1,7 +1,6 @@
 "use client";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { httpService } from "../utility/httpService";
 import ErrorMessage from "../Components/ErrorMessage";
 
 export default function Page() {
