@@ -130,4 +130,22 @@
   a {
     @apply font-bold;
   }
+
+  .termsofservice_content h2 {
+    @apply text-3xl font-bold mb-4;
+  }
+  
+  .termsofservice_content p {
+    @apply leading-7;
+    @apply mb-2;
+  }
+
+  .termsofservice_content ul {
+    @apply list-disc ml-5; /* Adds bullet points and left margin */
+  }
+
+  .termsofservice_content ul li {
+      @apply leading-7 mb-2; /* Line height and spacing */
+  }
+
 }

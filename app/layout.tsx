@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 export const metadata: Metadata = {
   title: "URL Shortener - ShotURL",
@@ -34,7 +36,11 @@ export default function RootLayout({
         </Script>
       </head>
       <body>
-        {children}
+            <Header />
+            <div className="w-full max-w-[90%] sm:max-w-[75%] md:max-w-1/2 mx-auto my-10">
+              {children}
+            </div>
+            <Footer />
       </body>
     </html>
   );

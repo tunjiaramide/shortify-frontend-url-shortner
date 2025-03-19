@@ -14,7 +14,7 @@ export default function Home() {
   const [shortenedURL, setShortenedURL] = useState<ShortenedURLType | null>(null);
 
   return (
-    <div className="w-full max-w-[90%] sm:max-w-[75%] md:max-w-1/2 mx-auto items-center p-4
+    <div className="items-center p-4
       md:flex md:flex-col md:justify-center">
       <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl text-blue-500 font-bold text-center">
         Fast, Free & Easy URL Shortening with Shoturl.co
